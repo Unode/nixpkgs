@@ -5335,8 +5335,9 @@ in
 
   libgaminggear = callPackage ../development/libraries/libgaminggear { };
 
-  libhandy = callPackage ../development/libraries/libhandy { };
-
+  libhandy = libhandy_1;
+  # stable version
+  libhandy_1 = callPackage ../development/libraries/libhandy { };
   # Needed for apps that still depend on the unstable verison of the library (not libhandy-1)
   libhandy_0 = callPackage ../development/libraries/libhandy/0.x.nix { };
 
